@@ -1059,20 +1059,15 @@ footer{
         margin-bottom: 30px;
     }
 
-
-    #encarte-digital{
-        height: 900px;
+    #iframe{
+        display: none;
     }
 
-    #encarte-digital #iframe{
-        position:absolute;
-        top: 225%;
+    #encarte-digital{
+        height: 700px;
     }
 
     #encarte-digital #encarte-folha{
-        width: 200px;
-        position:absolute;
-        top: 275%;
         display: flex;
         flex-direction: column;
         justify-content: center;
