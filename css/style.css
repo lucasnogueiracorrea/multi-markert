@@ -781,7 +781,7 @@ footer{
     position:fixed;
     width: 80px;
     height: 80px;
-    left: 0;
+    left: 0px;
     bottom: 0;
     margin-left: 50px;
     margin-bottom: 20px;
@@ -952,154 +952,102 @@ footer{
 
 */
 
+@media (max-width: 320px){
 
-@media (max-width:770px) {
+    /*REMOVENDO CONTEUDOS*/
 
-    #secondMenu #input-search{
+     .hidden-420{
         display: none;
-    }
+     }
 
-    #thirdMenu{
+     #input-search{
         display: none;
-    }
+     }
 
-    #informationTextTop ul li a{
-        font-size: 10px;
-        padding: 10px;
-    }
-
-    #informationTextTop ul li{
-        padding-left: 20px;
-    }
-
-    .hidden-700{
+     #thirdMenu{
         display: none;
-    }
+     }
 
-    #encarte-digital {
-        height: 550px;
-        display: flex;
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-    }
-
-    #encarte-digital #iframe iframe{
-        width: 300px;
-        height: 170px;
-    }
-
-    #encarte-digital #encarte-folha img{
-        width: 220px;
-    }
-
-    #copyrigth h2, h3{
-        font-size: 11px ;
-    }
-
-
-}
-
-@media (max-width:500px){
-
-    .hidden-420{
+     #social-midia{
         display: none;
-    }
+     }
 
-    #boxSlider{
+     .hidden-700{
+        display: none;
+     }
+
+     #boxSlider{
         width: 100%;
-        border-radius: 0;
-    }
-    #informationTextTop{
-        width: 90%;
-        height: 300px;
-        margin: auto;
-    }
+        height: 220px;
+        border-radius: 0px;
+     }
 
-    #informationTextTop ul{
-        display: flex;
-        flex-direction: column;  
-        justify-content: center;
-        align-items: center;
-    }
+     /*PROMOCAO RELAMPAGO*/ 
 
-    #informationTextTop ul li{
+     #productsOnSale{
+        width: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 12px;
-    }
+     }
 
-    #social-midia{
-        display: none;
-    }
+     .produtc{
+        width: 150px;
+        height: 220px;
+     }
 
-    #productsOnSale{
-        height: 730px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+     .produtc img{
+        width: 70px;
+     }
 
-    #box-promocao-relampago{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    #box-promocao-relampago h1{
-        margin-bottom: 50px;
-    }
-
-    .produtc{
-        margin-bottom: 30px;
-    }
-
-    #iframe{
-        display: none;
-    }
-
-    #encarte-digital{
-        height: 700px;
-    }
-
-    #encarte-digital #encarte-folha{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #box-produtos-em-destaque{
-        text-align: center;
-    }
-
-    #box-produtos-em-destaque h1{
-        margin-bottom: 50px;
-    }
-
-    #box-clube-de-vantagens{
-        text-align: center;
-    }
-
-    #box-clube-de-vantagens h1{
-        margin-bottom: 50px;
-    }
-
-    #cards img{
-        width: 225px;
-    }
-
-    #copyrigth{
-        padding: 10px;
-    }
-
-    #copyrigth h3 a{
+     .descriptionProdutc button{
+        width: 65px;
         font-size: 12px;
-    }
-}
+     }
 
+     /*VIDEO E ENCARTE*/
+
+     #encarte-digital{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     
+     #encarte-digital iframe{
+        width: 280px;
+        height: 160px;
+     }
+
+     #encarte-folha{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+     #encarte-folha img{
+        width: 200px;
+     }
+
+     /*FOOTER*/
+
+     #cards img{
+        width: 250px;
+        margin-top: 30px;
+     }
+
+     #copyrigth h2, h3{
+        font-size: 11px;
+     }
+
+     #copyrigth h3 a {
+        font-size: 12px;
+     }
+
+}
