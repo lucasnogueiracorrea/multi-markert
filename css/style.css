@@ -954,100 +954,159 @@ footer{
 
 @media (max-width: 520px){
 
-    /*REMOVENDO CONTEUDOS*/
+    /*REMOVENDO ITENS DA TELA*/
+    .hidden-500{
+        display: none !important;
+    }
 
-     .hidden-420{
-        display: none;
-     }
 
-     #input-search{
-        display: none;
-     }
-
-     #thirdMenu{
-        display: none;
-     }
-
-     #social-midia{
-        display: none;
-     }
-
-     .hidden-700{
-        display: none;
-     }
-
-     #boxSlider{
+    /*SLIDE*/
+    #boxSlider{
+        margin: auto;
+        margin-top: 60px;
+        background-color: brown;
         width: 100%;
-        height: 220px;
-        border-radius: 0px;
-     }
-
-     /*PROMOCAO RELAMPAGO*/ 
-
-     #productsOnSale{
-        width: 100%;
-        height: 100vh;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 0;
+    }
+    
+    .slides input {
+        display: none;
+    }
+    
+    .slides{
         display: flex;
-        flex-direction: column;
-     }
-
-     .produtc{
-        width: 150px;
-        height: 220px;
-     }
-
-     .produtc img{
-        width: 70px;
-     }
-
-     .descriptionProdutc button{
-        width: 65px;
-        font-size: 12px;
-     }
-
-     /*VIDEO E ENCARTE*/
-
-     #encarte-digital{
-        width: 100%;
+        width: 400%;
         height: 100%;
-        border-radius: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-     }
-     
-     #encarte-digital iframe{
-        width: 280px;
-        height: 160px;
-     }
+    }
 
-     #encarte-folha{
+    .slide img{
         width: 100%;
-        height: 100vh;
+        height: 200px;
+    }
+    
+    .slide{
+        width: 30%;
+        transition: 0.6s;
+    }
+    
+    #slide1:checked ~ .s1 {
+        margin-left:  0;
+    }
+    
+    #slide2:checked ~ .s1 {
+        margin-left:  -31%;
+    }
+    
+    #slide3:checked ~ .s1 {
+        margin-left:  -60.5%;
+    }
+    
+    #slide4:checked ~ .s1 {
+        margin-left:  -94.5%;
+    }
+  
+    #productsOnSale{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 35px;
+    }
+
+    .produtc{
+        height: 220px;
+    }
+
+    #titlePrductsOnSale{
+        text-align: center;
+        background-color: rgb(241, 60, 60);
+        border: 3px solid rgb(230, 193, 48);
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-weight: 500;
+    }
+
+    #encarte-digital{
+        width: 80%;
+        height: 900px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     }
+        text-align: center;
+        border-radius: 0;
+        background: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+        margin-top: 0px;
+    }
 
-     #encarte-folha img{
-        width: 200px;
-     }
+    #iframe iframe{
+        width: 80%;
+        height: 200px;
+    }
 
-     /*FOOTER*/
+    #encarte-digital div iframe {
+        border: 2px dotted rgba(255, 255, 255, 0.586);
+        box-shadow: 10px 10px 10px rgba(56, 10, 10, 0.225);
+        margin-top: 20px;
+    }
 
-     #cards img{
+    #encarte-digital div iframe:hover{
+        border: 3px dotted rgba(255, 247, 0, 0.936);
+        box-shadow: 25px 25px 25px 5px rgba(56, 10, 10, 0.225);
+    }
+
+    #encarte-folha{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    #encarte-folha img{
         width: 250px;
-        margin-top: 30px;
-     }
+        border: 2px dotted rgba(255, 255, 255, 0.586);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.352);
+        cursor: pointer;
+        transition: 0.5s;
+    }
 
-     #copyrigth h2, h3{
-        font-size: 11px;
-     }
+    #encarte-folha img:hover{
+        width: 270px;
+    }
 
-     #copyrigth h3 a {
-        font-size: 12px;
-     }
+    #encarte-pages div img{
+        width: 280px;
+    }
 
+    #encarte-pages div h2{
+        width: 100%;
+        text-align: center;
+        background-color: rgb(241, 60, 60);
+        border: 3px solid rgb(230, 193, 48);
+        border-radius: 0px;
+        padding: 10px;
+        color: white;
+        font-weight: 500;
+    }
+
+    #encarte-pages div p{
+        font-size: 13px;
+    }
+
+    #cards img{
+        width: 220px;
+    }
+
+    #copyrigth h2, h3{
+        text-align: center;
+        font-size: 10px;
+    }
+
+    #copyrigth h3 a{
+        font-size: 16px;
+    }
 }
